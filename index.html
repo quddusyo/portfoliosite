@@ -7,116 +7,149 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YQ Portfoliosite</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <!-- home section -->
-    <!-- nav bar -->
-    <div class="nav-container">
-        <nav>
-            <div class="logo">
-                <img src="./assets/logo.png" alt="logo">
-            </div>
-            <ul class="nav-items">
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Resume</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
-
-    <!-- hero image -->
-    <div class="hero-container">
-        <!-- img animation loop -->
-        <!-- <img class="hero" src="./assets/hero/tree1.png" />
-        <img class="hero" src="./assets/hero/tree2.png" />
-        <img class="hero" src="./assets/hero/tree3.png" />
-        <img class="hero" src="./assets/hero/tree3.png" /> -->
-    </div>
-    <div class="home-container">
-        <div class="home-intro">
-            <h1>HI, I'm Yousuf,</h1>
-            <h1>I'm a Full-Stack Developer</h1>
+    <div class="section-container">
+        <!-- nav bar -->
+        <div class="nav-container">
+            <nav>
+                <div class="logo">
+                    <img src="./assets/logo.png" alt="logo">
+                </div>
+                <ul class="nav-items">
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Resume</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <div class="arrow"></div>
-        <div class="arrow down"></div>
+
+        <!-- hero image -->
+        <div class="hero-container">
+            <!-- img animation loop -->
+            <!-- <img class="hero" src="./assets/hero/tree1.png" />
+            <img class="hero" src="./assets/hero/tree2.png" />
+            <img class="hero" src="./assets/hero/tree3.png" />
+            <img class="hero" src="./assets/hero/tree3.png" /> -->
+        </div>
+        <div class="home-container">
+            <div class="home-intro">
+                <h1 class="intro hidden">HI, I'm Yousuf. </h1>
+                <h1 class="intro hidden">I'm a Full-Stack Developer</h1>
+            </div>
+            <div class="arrow hidden"><img src="./assets/Arrow.png" alt="arrow 1"></div>
+            <div class="arrow hidden"><img src="./assets/Arrow.png" alt="arrow 2"></div>
+        </div>
     </div>
 
     <!-- about section -->
-    <div class="about-container">
-        <h2>ABOUT ME</h2>
-        <p>In the Wnter of 2020, I enrolled in a full-stack web developer bootcamp. Due to my curious nature, I was
-            hooked and continue to learn new technologies. I enjoy researching alongside problem solving to create
-            robust responsive full-stack web applications with a focus on UI design and animations. I have experience in
-            many technologies, specifically the MERN stack.</p>
-        <div class="skills-container">
-            <div class="skills">
-                <h3>Languages</h3>
-                <p>Python, JavaScript (ES5+), SQL</p>
-            </div>
-            <div class="skills">
-                <h3>Framworks / Libraries</h3>
-                <p>Bootstrap, ReactsJs, ExpressJs</p>
-            </div>
-            <div class="skills">
-                <h3>RDBMS</h3>
-                <p>MongoDB, MySQL</p>
-            </div>
-            <div class="skills">
-                <h3>Other Technologies</h3>
-                <p>VS Code, Git, Github, NodeJs, Postman API, CLI, AWS Cloud</p>
-            </div>
-        </div>
-
-        <!-- recent work section -->
-        <div class="projects-container">
-            <h2>RECENT WORK</h2>
-            <div class="project">
-                <img src="" alt="" />
-                <div class="project-description">
-                    <h2>title</h2>
-                    <p>description Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore enim illo, est nisi
-                        maxime quisquam nostrum at eos omnis officiis tenetur dolorem odio consequatur dolore quibusdam
-                        quidem! Consequuntur, autem ut!</p>
-                    <h2>Technologies</h2>
-                    <p>MongoDb, NodeJs, ExpressJs, Google Maps Api, Mongoose ODM, Postman Api</p>
+    <div class="section-container hidden">
+        <div class="about-section">
+            <h2>ABOUT ME</h2>
+            <p>In the Winter of 2020, I enrolled in a full-stack web developer bootcamp. Due to my curious nature, I was
+                hooked and continue to learn new technologies. I enjoy researching alongside problem solving to create
+                robust responsive full-stack web applications with a focus on UI design and animations. I have
+                experience in many technologies used to create websites for my freelancing clients.</p>
+            <div class="skills-container">
+                <div class="skills hidden">
+                    <h3>Languages</h3>
+                    <p>Python, JavaScript (ES5+), SQL</p>
+                </div>
+                <div class="skills hidden">
+                    <h3>Frameworks / Libraries</h3>
+                    <p>Bootstrap, ReactsJs, ExpressJs</p>
+                </div>
+                <div class="skills hidden">
+                    <h3>RDBMS</h3>
+                    <p>MongoDB, MySQL</p>
+                </div>
+                <div class="skills hidden">
+                    <h3>Other Technologies</h3>
+                    <p>VS Code, Git, Github, NodeJs,<br /> Postman API, CLI, AWS Cloud</p>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- contact section -->
-        <div class="contact-container">
+    <!-- recent work section -->
+    <div class="section-container hidden">
+        <h2>RECENT WORK</h2>
+        <div class="project">
+            <img src="./assets/projects/da-spot.png" alt="" />
+            <div class="project-description">
+                <h3>Da Spot</h3>
+                <p>Da Spot is a full-stack CRUD web application which allows users to login and post spots they have
+                    visited with the spots information to plan their trips with ease. Implemented Error Handling and
+                    Utilized Nodejs, Mongodb, Express, Bootstrap, MapBox API, and npm modules. This website includes
+                    multiple routes, some are log-in/register pages with safe password storing. Try it out or view the
+                    source code below.</p>
+                <h3>Technologies</h3>
+                <p>MongoDb, NodeJs, ExpressJs, Google Maps Api, Mongoose ODM, Postman Api</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- contact section -->
+    <div class="section-container contact-wrapper">
+        <!-- contact form -->
+        <div class="form-wrapper hidden">
             <h2>CONTACT ME</h2>
             <form action="https://formsubmit.co/yusuf1quddus@gmail.com" method="POST">
                 <div class="row">
-                    <label for="firstName">First Name</label>
-                    <input type="text" id="firstName" name="firstName" placeholder="John" required />
-                    <label for="lasttName">Last Name</label>
-                    <input type="text" id="lastName" name="lastName" placeholder="Doe" required />
+                    <div class="column">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName" placeholder="John" required />
+                    </div>
+                    <div class="column">
+                        <label for="lasttName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" placeholder="Doe" required />
+                    </div>
                 </div>
                 <div class="row">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="example@example.com" required />
-                    <label for="phoneNumber">Phone Number</label>
-                    <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="123 456 7890" required />
+                    <div class="column">
+                        <label for="email">Email</label>
+                        <input class="email-input" type="email" id="email" name="email"
+                            placeholder="example@example.com" required />
+                    </div>
+                    <div class="column">
+                        <label for="phoneNumber">Phone Number</label>
+                        <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="123 456 7890" required />
+                    </div>
                 </div>
                 <div class="row">
-                    <label for="message">Message</label>
-                    <textarea type="text" id="message" name="message" placeholder="Send me a message"
-                        required></textarea>
+                    <div class="column">
+                        <label for="message">Message</label>
+                        <textarea type="text" id="message" name="message" placeholder="Send me a message"
+                            required></textarea>
+                    </div>
                 </div>
-                <button>Submit</button>
+                <div class="btn-container">
+                    <button>Submit</button>
+                </div>
             </form>
         </div>
-
-        <!-- footer section -->
+        <!-- footer -->
         <footer>
-            <div class="footer-contact-labels">
-                <h2>LinkedIn</h2>
-                <h2>Github</h2>
-                <h2>Resume</h2>
+            <div class="footer-contact">
+                <p>LinkedIn</p>
+                <p>Github</p>
+                <p>Resume</p>
+                <a class="btn" href="https://www.linkedin.com/in/yousuf-quddus" target="_blank">
+                    <img src="./assets/contact/linkedin_icon.png" alt="linkedin">
+                </a>
+                <a class="btn" href="https://github.com/quddusyo" target="_blank">
+                    <img src="./assets/contact/github_icon.png" alt="github">
+                </a>
+                <a class="btn" href="YousufQ_Resume.pdf" download="YousufQ_Resume.pdf" target="_blank">
+                    <img src="./assets/contact/download_icon.png" alt="download resume">
+                </a>
             </div>
-            <div class="footer-contact-icons">
+            <!-- <div class="footer-contact-icons">
                 <a href="https://www.linkedin.com/in/yousuf-quddus" target="_blank">
                     <img src="./assets/contact/linkedin_icon.png" alt="linkedin">
                 </a>
@@ -126,12 +159,13 @@
                 <a href="YousufQ_Resume.pdf" download="YousufQ_Resume.pdf" target="_blank">
                     <img src="./assets/contact/download_icon.png" alt="download resume">
                 </a>
-            </div>
-            <div class="footer-copywrite">
-                <p>&copy; YQ Portfoliosite. All Rights Reserved.</p>
+            </div> -->
+            <div class="footer-text">
+                <p>2022 &copy; YQ Portfoliosite. All Rights Reserved.</p>
             </div>
         </footer>
     </div>
+    <script src="app.js"></script>
 </body>
 
 </html>

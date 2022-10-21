@@ -12,4 +12,4 @@ Implemented:
 Need to implment:
   - responsive css using media queries
   - home page animation loop
-  - projects section css and animation
+  - projects section css and animation on hover effects
